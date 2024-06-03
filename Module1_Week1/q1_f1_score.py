@@ -1,4 +1,5 @@
 import math
+
 def calc_f1_score(tp, fp, fn):
     if type(tp) != int or type(fp) != int or type(fn) != int:
         if type(tp) != int:
