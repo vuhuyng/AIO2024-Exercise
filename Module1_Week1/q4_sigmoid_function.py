@@ -1,4 +1,5 @@
 import math
+
 def calc_sig(x):
         return 1 / (1 + math.e ** (-x))
 

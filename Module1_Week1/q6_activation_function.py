@@ -1,4 +1,5 @@
 import math
+
 def calc_activation_func(x, act_name):
     if act_name == 'sigmoid':
         return 1 / (1 + math.e ** (-x))

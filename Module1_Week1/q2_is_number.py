@@ -1,4 +1,5 @@
 import math
+
 def is_number(n):
     try:
         float(n)   
