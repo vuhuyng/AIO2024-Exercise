@@ -3,7 +3,7 @@ import random
 
 
 def regression_loss_func(num_sample, loss_name):
-    if num_sample.isnumeric() != 1.0:
+    if not num_sample.isdigit():
         print('number of sample must be an integer number')
         return
     num_sample = int(num_sample)

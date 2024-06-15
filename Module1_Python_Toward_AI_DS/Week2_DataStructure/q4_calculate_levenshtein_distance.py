@@ -1,5 +1,5 @@
 def levenshtein_distance(token1, token2):
-    distances = [[0] * (len(token2) + 1) for i in range(len(token1) + 1)]
+    distances = [[0] * (len(token2) + 1) for _ in range(len(token1) + 1)]
 
     for t1 in range(len(token1) + 1):
         distances[t1][0] = t1
@@ -20,5 +20,9 @@ def levenshtein_distance(token1, token2):
     return distance
 
 
-assert levenshtein_distance("hi", "hello") == 4.0
+expected_distance = 4.0
+actual_distance = levenshtein_distance("hi", "hello")
+tolerance = 0.0001
+
+assert abs(expected_distance - actual_distance) < tolerance
 print(levenshtein_distance("hola", "hello"))

@@ -2,14 +2,14 @@ def window_maximum(num_list, k):
     result = []
     start = 0
     end = k
-    max = -9999999999999999999999999
+    max_value = -9999999999999999999999999
     for _ in num_list:
         if end > len(num_list):
             return result
         for i in range(start, end):
-            if num_list[i] > max:
-                max = num_list[i]
-        result.append(max)
+            if num_list[i] > max_value:
+                max_value = num_list[i]
+        result.append(max_value)
         start += 1
         end += 1
     return result
