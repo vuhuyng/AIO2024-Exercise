@@ -1,5 +1,6 @@
 import math
 
+
 def calc_f1_score(tp, fp, fn):
     if type(tp) != int or type(fp) != int or type(fn) != int:
         if type(tp) != int:
@@ -22,6 +23,6 @@ def calc_f1_score(tp, fp, fn):
 
 
 if __name__ == "__main__":
-    calc_f1_score(tp=2,fp=3, fn=4)
+    calc_f1_score(tp=2, fp=3, fn=4)
 
     calc_f1_score(tp='a', fp=3, fn=4)

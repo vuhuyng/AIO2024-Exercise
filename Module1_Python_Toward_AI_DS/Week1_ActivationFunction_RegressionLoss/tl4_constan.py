@@ -1,10 +1,12 @@
 import math
 
+
 def factorial(x):
     result = 1
-    for i in range(1,x+1):
+    for i in range(1, x+1):
         result *= i
     return result
+
 
 def approx_sin(x, n):
     result = 0
@@ -15,6 +17,7 @@ def approx_sin(x, n):
         result += part1 * (part2 / part3)
     return result
 
+
 def approx_cos(x, n):
     result = 0
     for i in range(n):
@@ -24,6 +27,7 @@ def approx_cos(x, n):
         result += part1 * (part2 / part3)
     return result
 
+
 def approx_sinh(x, n):
     result = 0
     for i in range(n):
@@ -31,6 +35,7 @@ def approx_sinh(x, n):
         part2 = factorial(2 * i + 1)
         result += part1 / part2
     return result
+
 
 def approx_cosh(x, n):
     result = 0
@@ -50,8 +55,3 @@ if __name__ == "__main__":
         print(f'appox cos x:{x}, n:{n} = {approx_cos(x, n)}')
         print(f'appox sinh x:{x}, n:{n} = {approx_sinh(x, n)}')
         print(f'appox cosh x:{x}, n:{n} = {approx_cosh(x, n)}')
-
-
-
-    
-    
