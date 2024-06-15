@@ -9,7 +9,7 @@ def is_number(n):
         return False
 
 
-assert is_number(3) == 1.0
+assert math.isclose(is_number(3), 1.0)
 assert is_number('-2a') == 0
 
 print(is_number(1))

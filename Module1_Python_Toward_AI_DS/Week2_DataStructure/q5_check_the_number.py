@@ -1,10 +1,9 @@
-def check_the_number(N):
+def check_the_number(n):
     list_of_numbers = []
-    result = ""
-    for i in range(1, 5):
-        if N in list_of_numbers:
+    for _ in range(1, 5):
+        if n in list_of_numbers:
             results = "True"
-        if N not in list_of_numbers:
+        if n not in list_of_numbers:
             results = "False"
     return results
 

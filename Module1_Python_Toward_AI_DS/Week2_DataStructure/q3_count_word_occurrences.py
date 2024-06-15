@@ -1,7 +1,6 @@
 def count_word(file_path):
     counter = {}
 
-    # Your Code Here
     with open(file_path, 'r') as f:
         conten = f.read()
     conten = conten.lower().strip().split()

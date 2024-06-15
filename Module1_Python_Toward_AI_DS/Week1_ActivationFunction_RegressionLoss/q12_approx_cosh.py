@@ -14,5 +14,7 @@ def approx_cosh(x, n):
     return result
 
 
-assert round(approx_cosh(x=1, n=10), 2) == 1.54
+import math
+
+assert math.isclose(approx_cosh(x=1, n=10), 1.54, rel_tol=1e-9, abs_tol=0.0)
 print(round(approx_cosh(x=3.14, n=10), 2))
