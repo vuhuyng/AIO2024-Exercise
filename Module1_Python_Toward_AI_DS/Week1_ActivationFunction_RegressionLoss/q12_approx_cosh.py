@@ -1,8 +1,9 @@
 def factorial(x):
     result = 1
-    for i in range(1,x+1):
+    for i in range(1, x+1):
         result *= i
     return result
+
 
 def approx_cosh(x, n):
     result = 0
@@ -13,5 +14,5 @@ def approx_cosh(x, n):
     return result
 
 
-assert round(approx_cosh(x=1, n=10), 2)==1.54
+assert round(approx_cosh(x=1, n=10), 2) == 1.54
 print(round(approx_cosh(x=3.14, n=10), 2))

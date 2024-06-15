@@ -1,5 +1,10 @@
 def my_function(n):
-    # Your code here
+    result = -(10*100)
+    for e in n:
+        if e > result:
+            result = e
+    return result
+
 
 my_list = [1001, 9, 100, 0]
 assert my_function(my_list) == 1001

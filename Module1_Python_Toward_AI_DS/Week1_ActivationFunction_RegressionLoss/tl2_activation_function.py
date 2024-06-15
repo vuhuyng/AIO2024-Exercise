@@ -1,11 +1,13 @@
 import math
 
+
 def is_number(n):
     try:
-        float(n)   
-        return True 
+        float(n)
+        return True
     except ValueError:
         return False
+
 
 def calc_activation_func(x, act_name):
     if not is_number(x):

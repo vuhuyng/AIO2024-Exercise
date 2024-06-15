@@ -1,10 +1,14 @@
 def function_helper(x):
-    # Your code here
-    # If x > 0, return 'T', otherwise return 'N'
+    if x > 0:
+        return 'T'
+    else:
+        return 'N'
+
 
 def my_function(data):
     res = [function_helper(x) for x in data]
     return res
+
 
 data = [10, 0, -10, -1]
 assert my_function(data) == ['T', 'N', 'N', 'N']

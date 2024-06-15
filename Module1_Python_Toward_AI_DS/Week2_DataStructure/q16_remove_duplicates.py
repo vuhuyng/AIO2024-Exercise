@@ -1,8 +1,9 @@
 def function_helper(x, data):
     for i in data:
-        # Your code here
-        # If x == i, return 0
+        if x == i:
+            return 0
     return 1
+
 
 def my_function(data):
     res = []
@@ -10,6 +11,7 @@ def my_function(data):
         if function_helper(i, res):
             res.append(i)
     return res
+
 
 lst = [10, 10, 9, 7, 7]
 assert my_function(lst) == [10, 9, 7]
