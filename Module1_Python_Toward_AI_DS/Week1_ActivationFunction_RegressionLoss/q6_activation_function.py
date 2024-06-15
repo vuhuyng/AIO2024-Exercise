@@ -1,5 +1,6 @@
 import math
 
+
 def calc_activation_func(x, act_name):
     if act_name == 'sigmoid':
         return 1 / (1 + math.e ** (-x))
@@ -16,6 +17,5 @@ def calc_activation_func(x, act_name):
             return x
 
 
-assert calc_activation_func(x = 1, act_name='relu') == 1
-print(round(calc_activation_func(x = 3, act_name='sigmoid'), 2))
-        
+assert calc_activation_func(x=1, act_name='relu') == 1
+print(round(calc_activation_func(x=3, act_name='sigmoid'), 2))
