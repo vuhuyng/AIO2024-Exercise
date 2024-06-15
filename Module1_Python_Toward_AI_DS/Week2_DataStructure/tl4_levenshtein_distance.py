@@ -1,5 +1,5 @@
-def levenshteinDistanceDP(str1, str2):
-    distances = [[0] * (len(str2) + 1) for i in range(len(str1) + 1)]
+def levenshtein_distance_dp(str1, str2):
+    distances = [[0] * (len(str2) + 1) for _ in range(len(str1) + 1)]
 
     for t1 in range(len(str1) + 1):
         distances[t1][0] = t1
@@ -19,5 +19,5 @@ def levenshteinDistanceDP(str1, str2):
     return distances[len(str1)][len(str2)]
 
 
-distance = levenshteinDistanceDP("yu", "you")
+distance = levenshtein_distance_dp("yu", "you")
 print(distance)

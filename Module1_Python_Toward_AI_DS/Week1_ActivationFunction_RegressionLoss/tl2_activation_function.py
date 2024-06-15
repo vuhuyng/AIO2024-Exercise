@@ -12,10 +12,10 @@ def is_number(n):
 def calc_activation_func(x, act_name):
     if not is_number(x):
         print('x must be a number')
-        return
+        # Remove this unneeded "pass"
     elif act_name not in ['sigmoid', 'relu', 'elu']:
         print(f'{act_name} is not supported')
-        return
+        # Remove this redundant return
     else:
         x = float(x)
 

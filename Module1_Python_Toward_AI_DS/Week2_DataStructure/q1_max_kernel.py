@@ -2,14 +2,14 @@ def max_kernel(num_list, k):
     result = []
     start = 0
     end = k
-    max = -999999999999999999999999
+    max_value = -999999999999999999999999
     for _ in num_list:
         if end > len(num_list):
             return result
         for i in range(start, end):
-            if max < num_list[i]:
-                max = num_list[i]
-        result.append(max)
+            if max_value < num_list[i]:
+                max_value = num_list[i]
+        result.append(max_value)
         start += 1
         end += 1
     return result
