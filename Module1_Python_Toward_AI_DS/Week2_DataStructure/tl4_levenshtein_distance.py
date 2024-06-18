@@ -15,7 +15,6 @@ def levenshtein_distance_dp(str1, str2):
                 b = distances[t1 - 1][t2]
                 c = distances[t1 - 1][t2 - 1]
                 distances[t1][t2] = min(a, b, c) + 1
-
     return distances[len(str1)][len(str2)]
 
 
