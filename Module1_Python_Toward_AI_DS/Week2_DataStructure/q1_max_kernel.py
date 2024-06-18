@@ -2,7 +2,7 @@ def max_kernel(num_list, k):
     result = []
     start = 0
     end = k
-    max_value = -999999999999999999999999
+    max_value = -99999999999999999999999999999999999999999
     for _ in num_list:
         if end > len(num_list):
             return result
