@@ -40,18 +40,18 @@ class Doctor(Person):
 class Ward:
     def __init__(self, name):
         self.__name = name
-        self.__listPeople = []
+        self.__listpeople = []
 
     def add_person(self, person):
-        self.__listPeople.append(person)
+        self.__listpeople.append(person)
 
     def describe(self):
         print(f"Ward Name: {self.__name}")
-        for p in self.__listPeople:
+        for p in self.__listpeople:
             p.describe()
 
     def count_doctor(self):
-        return sum(1 for p in self.__listPeople if isinstance(p, Doctor))
+        return sum(1 for p in self.__listpeople if isinstance(p, Doctor))
 
 
 student1 = Student(name="studentA", yob=2010, grade="7")
