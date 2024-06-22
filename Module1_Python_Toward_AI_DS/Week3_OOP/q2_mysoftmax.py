@@ -14,5 +14,5 @@ class MySoftmax(nn.Module):
 data = torch.Tensor([5, 2, 4])
 my_softmax = MySoftmax()
 output = my_softmax(data)
-assert torch.isclose(round(output[-1].item(), 2), 0.26, rtol=1e-09, atol=1e-09)
+assert round(output[-1]. item(), 2) == 0.26
 print(output)
